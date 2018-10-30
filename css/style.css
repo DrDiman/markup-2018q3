@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Heavy.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Medium.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Semibold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-UltraLight.otf") format("truetype");
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 1064px;
+    background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("../src/greeting-background.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    user-select: none;
+}
+
+/* top nav-menu */
+
+.menu {
+    display: grid;
+    grid-template-areas:
+        "logo navigation";
+    grid-template-rows: 90px;
+    grid-template-columns: auto 635px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.logo {
+    grid-area: logo;
+    padding: 0 4px;
+}
+
+.logo img {
+    width: 133px;
+    height: 29px;
+    display: block;
+}
+
+.navigation__items {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__link {
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    color: white;
+}
+
+.navigation__link:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* top nav-menu */
+
+/* center greeting */
+
+.greeting {
+    margin-top: 328px;
+    color: white;
+    text-align: center
+}
+
+.greeting__head {
+    font-size: 72px;
+    font-family: "Myriad Pro", "Lato", sans-serif;
+    /*Myriad Pro нет в бесплатном доступе */
+    text-transform: uppercase;
+}
+
+.greeting__text {
+    margin: 10px;
+    font-size: 32px;
+    line-height: 47px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+/* center greeting */
+
+.signin {
+    margin-top: 339px;
+    display: grid;
+    grid-template-columns: 50.8% auto;
+    grid-template-rows: 121px;
+    background-color: #2fac6c;
+}
+
+.login,
+.register {
+    line-height: 121px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.login {
+    text-align: end;
+    padding-right: 272px;
+    background-color: #203747;
+    -webkit-clip-path: polygon(100% 0, 96% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 96% 100%, 0 100%, 0 0);
+}
+
+.register {
+    padding-left: 240px;
+}
+
+.login:hover,
+.register:hover {
+    color: #bdb6ff
+}
