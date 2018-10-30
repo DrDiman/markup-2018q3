@@ -99,6 +99,7 @@ ul {
     background-repeat: no-repeat;
     background-position: top;
     user-select: none;
+    overflow: hidden;
 }
 
 /* top nav-menu */
@@ -149,9 +150,11 @@ ul {
 /* center greeting */
 
 .greeting {
+    height: 524px;
     margin-top: 328px;
     color: white;
-    text-align: center
+    text-align: center;
+    overflow: hidden;
 }
 
 .greeting__head {
@@ -172,7 +175,7 @@ ul {
 /* center greeting */
 
 .signin {
-    margin-top: 339px;
+
     display: grid;
     grid-template-columns: 50.8% auto;
     grid-template-rows: 121px;
