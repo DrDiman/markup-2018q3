@@ -94,12 +94,14 @@ ul {
 }
 
 .header {
-    height: 961px;
+    height: 1064px;
     background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("../src/greeting-background.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    user-select: none;
 }
+
+/* top nav-menu */
 
 .menu {
     display: grid;
@@ -123,10 +125,6 @@ ul {
     display: block;
 }
 
-.navigation {
-    grid-area: navigation;
-}
-
 .navigation__items {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -145,3 +143,34 @@ ul {
 .navigation__link:hover {
     border-bottom: 1px solid #ffffff;
 }
+
+/* top nav-menu */
+
+/* center greeting */
+
+.greeting {
+    margin-top: 328px;
+    color: white;
+    text-align: center
+}
+
+.greeting__head {
+    font-size: 72px;
+    font-family: "Myriad Pro", "Lato", sans-serif;
+    /*Myriad Pro нет в бесплатном доступе */
+    text-transform: uppercase;
+}
+
+.greeting__text {
+    margin: 10px;
+    font-size: 32px;
+    line-height: 47px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+/* center greeting */
+
+
+
+.signin {}
