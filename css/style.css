@@ -89,15 +89,59 @@ ul {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .header {
     height: 961px;
-    background-image: url(../src/greeting-background.jpg),
+    background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("../src/greeting-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .menu {
+    display: grid;
+    grid-template-areas:
+        "logo navigation";
+    grid-template-rows: 90px;
+    grid-template-columns: auto 635px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.logo {
+    grid-area: logo;
+    padding: 0 4px;
+}
+
+.logo img {
+    width: 133px;
+    height: 29px;
+    display: block;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.navigation__items {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__link {
+    display: block;
     height: 90px;
+    line-height: 90px;
+    color: white;
+}
+
+.navigation__link:hover {
+    border-bottom: 1px solid #ffffff;
 }
