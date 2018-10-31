@@ -97,6 +97,7 @@ ul {
     height: 1064px;
     background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("../src/greeting-background.jpg");
     background-repeat: no-repeat;
+    background-size: 1600px 961px;
     background-position: top;
     user-select: none;
     overflow: hidden;
@@ -174,6 +175,7 @@ ul {
 
 /* center greeting */
 
+/* sign in LOGIN AND REGISTER */
 .signin {
 
     display: grid;
@@ -206,4 +208,65 @@ ul {
 .login:hover,
 .register:hover {
     color: #bdb6ff
+}
+
+/* sign in LOGIN AND REGISTER */
+
+/* section Domain*/
+
+.domain {
+    margin: 0 auto;
+    width: 889px;
+    height: 578px;
+    background-color: #fcfc81;
+}
+
+/* section Domain*/
+
+/* section packages*/
+.packages {
+    height: 765px;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(../src/patternForPackages.png), url("../src/package-background.jpg") top no-repeat;
+
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.packages__container {
+    margin: 100px 0;
+    display: grid;
+    grid-template-areas: "basic normal big biggest";
+    grid-template-rows: 565px;
+    grid-template-columns: 255px 255px 255px 255px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.packages__item {
+    padding: 35px 27px 28px;
+    background-color: white;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.06);
+    border-top: 5px solid;
+}
+
+.basic-package {
+    grid-area: basic;
+    border-top-color: #f9d423;
+}
+
+.normal-package {
+    grid-area: normal;
+    border-top-color: #7f8c8d;
+}
+
+.big-package {
+    grid-area: big;
+    border-top-color: #f85f40;
+}
+
+.biggest-package {
+    grid-area: biggest;
+    border-top-color: #1abc9c;
 }
