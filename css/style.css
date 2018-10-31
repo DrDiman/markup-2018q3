@@ -51,6 +51,12 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -258,7 +264,6 @@ ul {
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.06);
     border-top: 5px solid;
 }
-
 
 .packages__item-head {
     border-bottom: 1px solid #dfdfdf;
