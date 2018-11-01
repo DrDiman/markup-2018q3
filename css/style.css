@@ -78,7 +78,8 @@ h4,
 h5,
 h6,
 p,
-figure {
+figure,
+blockquote {
     margin: 0;
 }
 
@@ -103,6 +104,11 @@ ul {
 
 .container {
     width: 1200px;
+    margin: 0 auto;
+}
+
+.container-S {
+    width: 889px;
     margin: 0 auto;
 }
 
@@ -487,6 +493,7 @@ ul {
 }
 
 .team-mate__network {
+    font-size: 15px;
     color: #bfbfbf;
 }
 
@@ -494,13 +501,41 @@ ul {
     color: #1f89ba;
 }
 
-
-
-
-
-
-
-
-
+.team-mate__network:nth-of-type(2) {
+    margin: 0 22px;
+}
 
 /* about section*/
+
+/* comments section*/
+.comments {
+    height: 190px;
+    overflow: hidden;
+    background: url(../src/comments-background.jpg) no-repeat top;
+    padding: 45px 0 52px;
+    text-align: center;
+    color: white;
+}
+
+.comments__content {
+    margin-bottom: 14px;
+    line-height: 30px;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.comments__author {
+    max-width: 100px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.comments__controls {
+    margin-left: 12px;
+}
+
+/* comments section*/
