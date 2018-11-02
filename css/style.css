@@ -236,7 +236,7 @@ ul {
     margin: 0 auto;
     width: 889px;
     height: 578px;
-    background-color: #fcfc81;
+    background-color: white;
 }
 
 /* section Domain*/
@@ -470,6 +470,7 @@ ul {
 
 /* about section*/
 .about {
+    background-color: white;
     height: 401px;
     color: #bfbfbf;
 }
@@ -567,6 +568,7 @@ ul {
     padding: 45px 0 52px;
     text-align: center;
     color: white;
+    background-color: white;
 }
 
 .comments__content {
@@ -685,6 +687,11 @@ ul {
     height: 75px;
     line-height: 75px;
     color: #686868;
+}
+
+.footer .navigation__link:hover {
+    border-bottom: 1px solid transparent;
+    color: white;
 }
 
 .footer__body {
