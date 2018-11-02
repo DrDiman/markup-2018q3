@@ -262,7 +262,7 @@ ul {
 }
 
 .packages__item {
-    padding: 35px 27px 28px;
+    padding: 37px 27px 28px;
     background-color: white;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.06);
     border-top: 5px solid;
@@ -270,6 +270,27 @@ ul {
 
 .packages__item:hover {
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.packages__progress-svg {
+    position: relative;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+}
+
+.circle-bar {
+    fill: none;
+    stroke-width: 6;
+    stroke-linecap: round;
+}
+
+.packages__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .packages__item-head {
@@ -348,6 +369,14 @@ ul {
     border-top-color: #f9d423;
 }
 
+.basic-package .circle-bar {
+    stroke: #f9d423;
+}
+
+.basic-package .packages__icon {
+    color: #f9d423;
+}
+
 .basic-package .advantage-value {
     color: #f9d423;
 }
@@ -364,6 +393,14 @@ ul {
 .normal-package {
     grid-area: normal;
     border-top-color: #7f8c8d;
+}
+
+.normal-package .circle-bar {
+    stroke: #7f8c8d;
+}
+
+.normal-package .packages__icon {
+    color: #7f8c8d;
 }
 
 .normal-package .advantage-value {
@@ -383,6 +420,14 @@ ul {
     border-top-color: #f85f40;
 }
 
+.big-package .circle-bar {
+    stroke: #f85f40;
+}
+
+.big-package .packages__icon {
+    color: #f85f40;
+}
+
 .big-package .advantage-value {
     color: #f85f40;
     font-weight: 600;
@@ -399,6 +444,14 @@ ul {
 .biggest-package {
     grid-area: biggest;
     border-top-color: #1abc9c;
+}
+
+.biggest-package .circle-bar {
+    stroke: #1abc9c;
+}
+
+.biggest-package .packages__icon {
+    color: #1abc9c;
 }
 
 .biggest-package .advantage-value {
