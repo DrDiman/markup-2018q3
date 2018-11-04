@@ -145,9 +145,10 @@ ul {
         "logo navigation";
     grid-template-rows: 90px;
     grid-template-columns: auto 635px;
+    overflow: hidden;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    overflow: hidden;
+
 }
 
 .logo {
@@ -187,23 +188,22 @@ ul {
 .greeting {
     height: 522px;
     margin-top: 331px;
-    color: white;
-    text-align: center;
     overflow: hidden;
+    text-align: center;
+    color: white;
 }
 
 .greeting__head {
     font-size: 72px;
     font-family: "MyriadPro", "Lato", sans-serif;
-    /*Myriad Pro нет в бесплатном доступе */
     text-transform: uppercase;
 }
 
 .greeting__text {
     margin: 6px;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 32px;
     line-height: 47px;
-    font-family: Georgia, 'Times New Roman', serif;
     font-style: italic;
 }
 
@@ -221,17 +221,17 @@ ul {
 .register {
     line-height: 121px;
     text-transform: uppercase;
-    color: white;
     font-size: 22px;
     font-weight: 700;
+    color: white;
 }
 
 .login {
-    text-align: right;
     padding-right: 272px;
-    background-color: #203747;
     -webkit-clip-path: polygon(100% 0, 96% 100%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 96% 100%, 0 100%, 0 0);
+    text-align: right;
+    background-color: #203747;
 }
 
 .register {
@@ -248,53 +248,53 @@ ul {
 /* section Domain*/
 
 .domain {
-    margin: 0 auto;
     height: 578px;
-    background-color: white;
-    color: #a2a2a2;
-    text-align: center;
+    margin: 0 auto;
     padding: 86px 0;
+    text-align: center;
+    color: #a2a2a2;
+    background-color: white;
 }
 
 .domain__title {
     height: 27px;
     overflow: hidden;
-    color: #383737;
     font-size: 24px;
     font-weight: 800;
+    color: #383737;
 }
 
 .domain__text {
     height: 36px;
     overflow: hidden;
     margin-top: 25px;
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 100;
-    text-align: left;
 }
 
 .domain__form {
+    position: relative;
     margin-top: 31px;
     padding: 14px 0;
-    border: 1px solid #a2a2a2;
     display: grid;
     grid-template-columns: 76px 1fr 86px;
     grid-template-rows: 1fr;
-    align-items: center;
-    position: relative;
     overflow: hidden;
+    align-items: center;
+    border: 1px solid #a2a2a2;
 }
 
 .domain__form::after {
     content: "\f107";
-    font-family: Fontawesome;
-    color: #cbcbcb;
     position: absolute;
     right: 13px;
     top: 15px;
     z-index: 1;
     text-align: right;
+    font-family: Fontawesome;
+    color: #cbcbcb;
     pointer-events: none;
 }
 
@@ -305,41 +305,41 @@ ul {
 }
 
 .domain__label-text {
-    border-right: 1px solid #d9d9d9;
     font-size: 15px;
     color: #cbcbcb;
+    border-right: 1px solid #d9d9d9;
 }
 
 .domain__input {
-    border: none;
     font-size: 15px;
     font-weight: 600;
     color: #868686;
+    border: none;
 }
 
 .domain__select {
     position: relative;
-    border: none;
-    border-left: 1px solid #d9d9d9;
     font-size: 16px;
     color: #cbcbcb;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    border: none;
+    border-left: 1px solid #d9d9d9;
 }
 
 
 .domain__table {
-    margin-top: 40px;
     width: 100%;
+    margin-top: 40px;
+    table-layout: fixed;
     border-spacing: 0;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 .domain__table-cell {
-    border: 1px solid #a2a2a2;
     height: 97px;
+    border: 1px solid #a2a2a2;
 }
 
 .domain__table,
@@ -408,11 +408,11 @@ ul {
 /* section packages*/
 .packages {
     height: 765px;
-    background: url("../src/package-background.jpg") top no-repeat;
     overflow: hidden;
     display: grid;
     justify-items: center;
     align-items: center;
+    background: url("../src/package-background.jpg") top no-repeat;
 }
 
 .packages__container {
@@ -428,10 +428,10 @@ ul {
 
 .packages__item {
     padding: 38px 27px 28px;
+    overflow: hidden;
+    border-top: 5px solid;
     background-color: white;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.06);
-    border-top: 5px solid;
-    overflow: hidden;
 }
 
 .packages__item:hover {
@@ -440,9 +440,9 @@ ul {
 
 .packages__progress-svg {
     position: relative;
-    margin: 0 auto;
     width: 55px;
     height: 55px;
+    margin: 0 auto;
 }
 
 .circle-bar {
@@ -467,23 +467,23 @@ ul {
 
 .packages__item-head h3 {
     margin: 16px 0;
+    text-align: center;
     font-size: 16px;
     font-weight: 700;
-    text-align: center;
     color: #282828;
 }
 
 .packages__item-body {
-    border-bottom: 1px solid #dfdfdf;
+    height: 283px;
     padding: 17px 0;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 20px;
     font-weight: 300;
     color: #b4b4b4;
-    height: 283px;
-    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .packages__list {
@@ -511,10 +511,10 @@ ul {
 
 .packages__foot-text::after {
     content: "";
-    display: block;
     width: 105px;
     height: 3px;
     margin: 4px auto 17px;
+    display: block;
 }
 
 .packages__foot-text .packages__foot-dollar {
@@ -529,9 +529,9 @@ ul {
 }
 
 .packages__foot-link {
-    color: #282828;
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
+    color: #282828;
 }
 
 
@@ -641,18 +641,18 @@ ul {
 
 /* about section*/
 .about {
-    background-color: white;
     height: 401px;
     overflow: hidden;
     color: #bfbfbf;
+    background-color: white;
 }
 
 .about__container {
-    border-top: 2px dotted #bfbfbf;
     padding: 100px 0;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+    border-top: 2px dotted #bfbfbf;
 }
 
 .about__text {
@@ -662,24 +662,24 @@ ul {
 }
 
 .about__head {
+    margin-bottom: 21px;
     font-size: 35px;
     color: #303030;
     font-weight: 600;
-    margin-bottom: 21px;
 }
 
 .about__head span {
+    font-family: 'Lato-Black', sans-serif;
     font-size: 35.11px;
     color: #303030;
-    font-family: 'Lato-Black', sans-serif;
 }
 
 .about__information {
     height: 135px;
     overflow: hidden;
+    line-height: 27.08px;
     font-size: 18.06px;
     font-weight: 200;
-    line-height: 27.08px;
 }
 
 .about__team {
@@ -699,26 +699,25 @@ ul {
 }
 
 .team-mate__photo {
-    display: block;
-    margin: 0 auto 12px;
-    border-radius: 50%;
-    border: 5px solid #e5e5e5;
     width: 100px;
     height: 100px;
+    margin: 0 auto 12px;
+    display: block;
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
 }
 
 .team-mate__name {
     margin-bottom: 7px;
-    color: #303030;
     font-size: 17px;
     font-weight: 600;
+    color: #303030;
 }
 
 .team-mate__profession {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 400;
-
 }
 
 .team-mate__network {
@@ -740,9 +739,8 @@ ul {
 .comments {
     height: 190px;
     overflow: hidden;
-    background: url(../src/comments-background.jpg) no-repeat top;
-
     color: white;
+    background: url(../src/comments-background.jpg) no-repeat top;
 }
 
 .slider-box {
@@ -765,11 +763,11 @@ ul {
 
 
 .comments__content {
-    text-align: center;
     line-height: 30px;
-    font-weight: 200;
-    font-size: 20px;
+    text-align: center;
     font-style: normal;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 .slider__nav {
@@ -827,16 +825,16 @@ ul {
     margin: 0 auto;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    color: white;
-    font-size: 28px;
     line-height: 60px;
+    font-size: 28px;
+    color: white;
+    border-radius: 50%;
 }
 
 .services__item-title {
     height: 21px;
-    overflow: hidden;
     margin: 20px 0 4px;
+    overflow: hidden;
 }
 
 .services__item-link {
@@ -852,10 +850,10 @@ ul {
 .services__item-body {
     max-height: 135px;
     overflow: hidden;
+    line-height: 22.03px;
     font-size: 16.02px;
     font-weight: 300;
     color: #7e7e7e;
-    line-height: 22.03px;
 }
 
 .back-circle--orange {
@@ -879,19 +877,20 @@ ul {
 /* footer section*/
 .footer {
     height: 294px;
-    background-color: #2a2a2a;
-    color: #686868;
     overflow: hidden;
+    color: #686868;
+    background-color: #2a2a2a;
 }
 
 .footer__menu {
+    display: grid;
     grid-template-rows: 75px;
-    grid-template-columns: auto 430px;
+    grid-template-columns: auto 432px;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     overflow: hidden;
     font-size: 13px;
     font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer__navigation-items {
@@ -903,19 +902,19 @@ ul {
 }
 
 .gray-link {
-    height: 75px;
+    height: 74px;
     line-height: 75px;
     color: #686868;
 }
 
 .footer .navigation__link:hover {
-    border-bottom: 1px solid transparent;
     color: white;
+    border-bottom: 1px solid transparent;
 }
 
 .footer__body {
-    padding: 34px 0;
     width: 100%;
+    padding: 34px 0;
     display: grid;
     grid-template-columns: 377px 505px 318px;
     grid-template-rows: 1fr;
@@ -925,10 +924,10 @@ ul {
 .footer__copyright {
     grid-area: copyright;
     padding: 15px 80px 25px 0;
-    border-right: 1px solid #686868;
+    line-height: 26px;
     font-size: 15px;
     font-weight: 300;
-    line-height: 26px;
+    border-right: 1px solid #686868;
 }
 
 .copyright-text {
@@ -956,9 +955,9 @@ ul {
 }
 
 .quick-link {
-    color: #686868;
     font-size: 15px;
     line-height: 29.04px;
+    color: #686868;
 }
 
 .quick-link:hover {
@@ -976,26 +975,26 @@ ul {
 
 .footer__contacts {
     height: 157px;
+    padding: 15px 0 25px 85px;
     overflow: hidden;
     grid-area: contacts;
-    padding: 15px 0 25px 85px;
-    border-left: 1px solid #686868;
+    line-height: 29.12px;
     font-size: 15px;
     font-weight: 300;
-    line-height: 29.12px;
+    border-left: 1px solid #686868;
 }
 
 .footer__phone {
-    color: #686868;
     line-height: 29.12px;
     font-size: 14.06px;
     font-weight: 300;
+    color: #686868;
 }
 
 .footer__email {
-    color: #686868;
     line-height: 29.9px;
     font-size: 15.06px;
+    color: #686868;
 }
 
 .footer__phone:hover,
@@ -1005,8 +1004,4 @@ ul {
 
 .footer__address {
     font-style: initial;
-}
-
-.test {
-    position: relative;
 }
