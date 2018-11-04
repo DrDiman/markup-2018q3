@@ -257,12 +257,16 @@ ul {
 }
 
 .domain__title {
+    height: 27px;
+    overflow: hidden;
     color: #383737;
     font-size: 24px;
     font-weight: 800;
 }
 
 .domain__text {
+    height: 36px;
+    overflow: hidden;
     margin-top: 25px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -271,7 +275,7 @@ ul {
 }
 
 .domain__form {
-    margin-top: 49px;
+    margin-top: 31px;
     padding: 14px 0;
     border: 1px solid #a2a2a2;
     display: grid;
@@ -279,6 +283,7 @@ ul {
     grid-template-rows: 1fr;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .domain__form::after {
@@ -329,12 +334,12 @@ ul {
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .domain__table-cell {
     border: 1px solid #a2a2a2;
     height: 97px;
-    width: 25%;
 }
 
 .domain__table,
@@ -418,6 +423,7 @@ ul {
     grid-template-columns: 255px 255px 255px 255px;
     align-content: center;
     justify-content: space-between;
+
 }
 
 .packages__item {
@@ -425,6 +431,7 @@ ul {
     background-color: white;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.06);
     border-top: 5px solid;
+    overflow: hidden;
 }
 
 .packages__item:hover {
@@ -453,6 +460,8 @@ ul {
 }
 
 .packages__item-head {
+    height: 107px;
+    overflow: hidden;
     border-bottom: 1px solid #dfdfdf;
 }
 
@@ -466,13 +475,15 @@ ul {
 
 .packages__item-body {
     border-bottom: 1px solid #dfdfdf;
-    padding: 19px 0;
+    padding: 17px 0;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 20px;
     font-weight: 300;
     color: #b4b4b4;
+    height: 283px;
+    overflow: hidden;
 }
 
 .packages__list {
@@ -503,7 +514,7 @@ ul {
     display: block;
     width: 105px;
     height: 3px;
-    margin: 2px auto 18px;
+    margin: 4px auto 17px;
 }
 
 .packages__foot-text .packages__foot-dollar {
@@ -632,6 +643,7 @@ ul {
 .about {
     background-color: white;
     height: 401px;
+    overflow: hidden;
     color: #bfbfbf;
 }
 
@@ -663,6 +675,8 @@ ul {
 }
 
 .about__information {
+    height: 135px;
+    overflow: hidden;
     font-size: 18.06px;
     font-weight: 200;
     line-height: 27.08px;
@@ -670,6 +684,8 @@ ul {
 
 .about__team {
     width: 680px;
+    height: 191px;
+    overflow: hidden;
     padding-left: 86px;
     padding-top: 8px;
     display: grid;
@@ -747,6 +763,7 @@ ul {
     transition: left 0.4s;
 }
 
+
 .comments__content {
     text-align: center;
     line-height: 30px;
@@ -798,7 +815,6 @@ ul {
 }
 
 .services__container {
-    margin-top: 99px 0;
     display: grid;
     grid-template-rows: 144px;
     grid-template-columns: repeat(4, 225px);
@@ -818,6 +834,8 @@ ul {
 }
 
 .services__item-title {
+    height: 21px;
+    overflow: hidden;
     margin: 20px 0 4px;
 }
 
@@ -832,7 +850,8 @@ ul {
 }
 
 .services__item-body {
-    max-height: 145px;
+    max-height: 135px;
+    overflow: hidden;
     font-size: 16.02px;
     font-weight: 300;
     color: #7e7e7e;
@@ -913,6 +932,8 @@ ul {
 }
 
 .copyright-text {
+    max-height: 85px;
+    overflow: hidden;
     margin-bottom: 13px;
 }
 
@@ -922,6 +943,8 @@ ul {
 
 
 .footer__quick-links {
+    height: 157px;
+    overflow: hidden;
     grid-area: quick-links;
     padding: 0 108px;
     display: grid;
@@ -952,6 +975,8 @@ ul {
 }
 
 .footer__contacts {
+    height: 157px;
+    overflow: hidden;
     grid-area: contacts;
     padding: 15px 0 25px 85px;
     border-left: 1px solid #686868;
