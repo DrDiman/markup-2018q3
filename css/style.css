@@ -227,7 +227,7 @@ ul {
 }
 
 .login {
-    text-align: end;
+    text-align: right;
     padding-right: 272px;
     background-color: #203747;
     -webkit-clip-path: polygon(100% 0, 96% 100%, 0 100%, 0 0);
@@ -267,6 +267,7 @@ ul {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 100;
+    text-align: left;
 }
 
 .domain__form {
@@ -656,13 +657,13 @@ ul {
 }
 
 .about__head span {
-    font-size: 35px;
+    font-size: 35.11px;
     color: #303030;
     font-family: 'Lato-Black', sans-serif;
 }
 
 .about__information {
-    font-size: 18px;
+    font-size: 18.06px;
     font-weight: 200;
     line-height: 27.08px;
 }
@@ -731,7 +732,7 @@ ul {
 }
 
 .comments__content {
-    max-height: 90px;
+    height: 60px;
     margin-bottom: 14px;
     line-height: 30px;
     font-weight: 200;
@@ -810,7 +811,7 @@ ul {
 
 .services__item-body {
     max-height: 145px;
-    font-size: 16px;
+    font-size: 16.02px;
     font-weight: 300;
     color: #7e7e7e;
     line-height: 22.03px;
@@ -917,6 +918,10 @@ ul {
 
 .quick-link:hover {
     color: white;
+}
+.quick-link:hover span {
+    display: inline-block;
+    transform: translate(11px);
 }
 
 .quick-link .fas {
