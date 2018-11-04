@@ -794,13 +794,47 @@ ul {
 .slider__nav {
     position: relative;
     left: 472px;
-    margin: 125px 2px 0;
+    top: 1px;
+    margin: 125px 4px 0;
     cursor: pointer;
+    width: 8px;
+    height: 8px;
 }
+
+.slider__nav::after {
+    content: "";
+    display: block;
+    background: #2f2f2e;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-position: 0 8px;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    transition: .25s all ease-in-out;
+}
+
+.slider__nav:checked::after,
+.slider__nav:checked::after {
+    background-color: white;
+    background-position: 0 0;
+}
+
+.slider__nav:hover::after,
+.slider__nav:hover::after {
+    background-color: white;
+}
+
 
 .comments__author {
     position: relative;
-    left: 306px;
+    left: 309px;
+    top: 4px;
     max-width: 100px;
     overflow: hidden;
     font-size: 20px;
